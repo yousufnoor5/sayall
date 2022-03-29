@@ -9,6 +9,7 @@ SayAll is an anonymous messaging platform. Users can send messages and feedbacks
 -> NodeJs folder contains files for API<br />
 -> NextJS folder contains files for frontend<br />
 -> Clone the repo<br />
+-> Goto NodeJs folder, open 'Constants.js' file and enter your mongodb address.<br/>
 -> Start API server, open terminal in NodeJs folder and run :<br />
 
 ```console

@@ -15,7 +15,7 @@ SayAll is an anonymous messaging platform. Users can send messages and feedbacks
 npm install
 node app.js
 ```
-<br />Make sure port 3000 is free.<br />
+Make sure port 3000 is free.<br />
 
 -> Goto NextJS folder, open terminal and run :<br />
 
@@ -23,7 +23,6 @@ node app.js
 npm install
 npm run dev
 ```
-
-<br />Make sure port 3001 is free.<br />
+Make sure port 3001 is free.<br /><br />
 
 Live Demo : [https://sayall.me](https://sayall.me)

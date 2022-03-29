@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+body{
+  background-color: #FAFAFA;
+  position: relative;
+}
+
+button{
+  padding : 2px 15px !important;
+  background-color: #2962FF !important;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus{
+  outline:none !important;
+  box-shadow:none !important;
+}
+input{
+  padding: .25rem .7rem !important;
+  height: 32px !important;
+  font-size: 15px !important;
+}
+input:focus{
+  font-size: 15px !important;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #2962FF;
+  /* background :linear-gradient(to right, #2962FF, #1A237E); */
+}
+.w-heading{
+  color : white;
+}
+h3{
+  text-align: center;
+}
+
+.small-progress {
+  min-width: 20px;
+  min-height: 20px;
+  border:solid 3px #0d6dfb;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transition: all 0.5s ease-in-out;
+  animation: loadingRotate 0.4s linear infinite;
+  margin: 9px auto;
+}
+
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.big-progress {
+  width: 50px;
+  height: 50px;
+  border:solid 3px #0d6dfb;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transition: all 0.5s ease-in-out;
+  animation: loadingRotate 0.4s linear infinite;
+}
+
+@keyframes loadingRotate {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+.register-card{
+  background-color: white;
+  box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
+  border-radius: 5px;
+  padding: 40px 60px;
+  height: 520px;
+  width: 350px;
+}
+.form-box{
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-card input, .login-card input, .quiz-info-card input{
+  width: 280px;
+}
+.login-card{
+  background-color: white;
+  box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
+  border-radius: 5px;
+  padding: 40px 60px;
+  height: 350px;
+  width: 350px;
+}
+
+.register-card p, .login-card p{
+  text-align: center;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.quiz-info-card{
+  background-color: white;
+  box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
+  border-radius: 5px;
+  padding: 40px 60px;
+  height: 380px;
+  width: 350px;
+}
+
+.card-container{
+  background-color: white;
+  box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
+  border-radius: 5px;
+}
+
+.msg{
+  font-size: 14px;
+}
+.questions-container input[type="radio"]{
+  margin: 0 !important;
+  margin-right: 10px !important;
+  margin-top:3px !important;
+  height: 25px !important;
+}
+.question{
+  border : 2px solid grey; 
+  padding : 10px; 
+  border-radius: 5px;
+}
+.add-quest{
+  padding : 0px !important;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.questions-container{
+  width: 99% !important;
+}
+.floating-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+
+.newmodal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.newmodal-card{
+  background-color: white;
+  padding : 20px;
+  width: 350px;
+  height: 210px;
+  border-radius: 5px;
+  position: relative;
+}
+.newmodal-card button{
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.sharelink{
+  color : #0d6dfb !important;
+}
+.no-margin{
+  margin : 0px !important;
+}
+
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff; 
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 12px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%; 
+  bottom: 30px;
+  border-radius: 5px;
+}
+
+#snackbar.show {
+  visibility: visible; 
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+a{
+  text-decoration: none;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+.register-card form, .login-card form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-card form h5, .login-card form h5{
+  align-self: flex-start;
+}
+.msg{
+  align-self: flex-start;
+  min-height: 10px;
+}
+
+@media (max-width : 400px){
+  .newmodal-card{
+    width: 270px;
+    height: 280px;
+  }
+  h5{
+    font-size: 17px !important;
+  }
+  h3{
+    font-size: 17px !important;
+  }
+  button{
+    font-size: 14px !important;
+  }
+  .register-card{
+    width: 290px;
+    height: 485px;
+  }
+  .login-card{
+    height: 325px;
+    width: 290px;
+  }
+  .register-card input, .login-card input{
+    width: 240px;
+  }
+  input{
+    height: 28px !important;
+    font-size: 13px !important;
+  }
+  label{
+    font-size: 14px !important;
+  }
+  .msg{
+    font-size: 12px !important;
+  }
+}
